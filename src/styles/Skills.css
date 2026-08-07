@@ -1,0 +1,136 @@
+/* Skills Section */
+.skills {
+  --light-pink: #fff1f9;        /* Light pink background */
+  --pink: #ffe6f3;              /* Pink */
+  --dark-pink: #ffc8e4;         /* Darker pink */
+  --dusty-pink: #e792be;        /* Dusty pink */
+  --black: #000000;
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  min-height: 850px;
+  padding: clamp(5rem, 9vw, 8rem) clamp(1.25rem, 7vw, 8rem);
+  background-image: url(../assets/polkadots.jpg);
+  color: var(--black);
+}
+
+.skills::before {
+  position: absolute;
+  z-index: -2;
+  inset: 0;
+  content: "";
+  opacity: 0.45;
+  mix-blend-mode: multiply;
+}
+
+.skills-heading { 
+    position: relative; 
+    z-index: 2; 
+    width: min(100%, 1180px); 
+    margin: 3rem auto 0; 
+}
+
+.skills-heading h1 { 
+    margin: 0; 
+    font-family: 'Amoresa', cursive; 
+    font-size: clamp(4.3rem, 9vw, 9.6rem); 
+    font-weight: 400; 
+    line-height: 1; 
+    color: var(--pink); 
+    -webkit-text-stroke: 1.35px var(--black); 
+}
+
+.skills-note-wrap { 
+    position: relative; 
+    z-index: 1; 
+    width: min(100%, 1000px); 
+    aspect-ratio: 2000 / 1500;
+    margin: 0 auto 0; 
+}
+.skills-paper { 
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    filter: drop-shadow(13px 16px 0 rgb(61 35 44 / 15%)) drop-shadow(0 18px 22px rgb(61 35 44 / 12%)); 
+    transform: rotate(-1.4deg);
+}
+
+.skills-note-content { 
+    position: relative; 
+    display: grid; 
+    grid-template-columns: repeat(3, 1fr); 
+    gap: clamp(1.1rem, 3vw, 3.5rem); 
+    align-items: center;
+    height: 100%;
+    padding: 0% 13% 5%; 
+}
+
+.skills-group { position: relative; min-width: 0; }
+
+.skills-group + .skills-group {
+    padding-left: clamp(1.1rem, 3vw, 3.5rem);
+}
+
+.skills-group + .skills-group::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    height: clamp(10rem, 15vw, 20rem);
+    transform: translateY(-50%);
+    width: 1px;
+    background: rgb(37 25 30 / 22%);
+}
+
+.skills-group h2 { margin: 0.7rem 0 0.7rem; font-family: 'Mourint', Georgia, serif; font-size: clamp(1.65rem, 2.8vw, 2.45rem); font-weight: 400; line-height: 1.02; }
+.skills-group p { margin: 0; font-family: 'Instrument Serif', Georgia, serif; font-size: clamp(1.25rem, 1.9vw, 1.65rem); line-height: 1.22; }
+
+.skills-sticker { position: absolute; z-index: 2; width: min(30vw, 200px); pointer-events: none; }
+.skills-sticker-pink { top: -3rem; right: 5%; transform: rotate(15deg); }
+.skills-sticker-blue { bottom: 3rem; left: -3%; transform: rotate(-18deg); }
+
+.skills-lace {
+  position: absolute;
+  z-index: 0;
+  left: 0;
+  width: 100%;
+  object-fit: fill;
+  pointer-events: none;
+}
+
+.skills-lace-top { top: 2rem; }
+.skills-lace-bottom { bottom: 0rem; transform: rotate(180deg); }
+
+@media (max-width: 760px) {
+    .skills { min-height: auto; padding-block: 5rem 6rem; }
+    .skills-heading { text-align: center; margin-bottom: 2rem; }
+    .skills-note-wrap { width: min(100%, 820px); aspect-ratio: 1500 / 2600; }
+    .skills-paper {
+        top: 50%;
+        left: 50%;
+        width: 190%;
+        height: 55%;
+        object-fit: fill;
+        transform: translate(-50%, -50%) rotate(-91.4deg);
+        
+    }
+    .skills-note-content { grid-template-columns: 1fr; gap: 0.65rem; padding: 17% 20% 13%; }
+    .skills-number { margin-bottom: 0.4rem; font-size: 1.5rem; }
+    .skills-group h2 { margin-bottom: 0.4rem; font-size: clamp(1.15rem, 4.4vw, 1.55rem); }
+    .skills-group p  { font-size: clamp(0.92rem, 3.3vw, 1.1rem); line-height: 1.18; overflow-wrap: break-word; }
+    .skills-group + .skills-group { 
+        border-top: 1px solid rgb(37 25 30 / 22%); 
+        border-left: 0; 
+        padding-top: 0.65rem; 
+        padding-left: 0; 
+        }
+    .skills-group + .skills-group::before {
+        display: none;
+    }
+    .skills-sticker-pink { top: -2.4rem; right: -0.2rem; }
+    .skills-sticker-blue { width: min(22vw, 140px); bottom: -1.8rem; left: -0.4rem; }
+    .skills-lace { width: 100%; }
+    .skills-lace-bottom { transform: rotate(180deg); }
+}
