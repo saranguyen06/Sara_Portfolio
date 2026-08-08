@@ -1,26 +1,26 @@
 /* Skills Section */
 .skills {
-  --light-pink: #fff1f9;        /* Light pink background */
-  --pink: #ffe6f3;              /* Pink */
-  --dark-pink: #ffc8e4;         /* Darker pink */
-  --dusty-pink: #e792be;        /* Dusty pink */
-  --black: #000000;
-  position: relative;
-  isolation: isolate;
-  overflow: hidden;
-  min-height: 850px;
-  padding: clamp(5rem, 9vw, 8rem) clamp(1.25rem, 7vw, 8rem);
-  background-image: url(../assets/polkadots.jpg);
-  color: var(--black);
+    --light-pink: #fff1f9;        /* Light pink background */
+    --pink: #ffe6f3;              /* Pink */
+    --dark-pink: #ffc8e4;         /* Darker pink */
+    --dusty-pink: #e792be;        /* Dusty pink */
+    --black: #000000;
+    position: relative;
+    isolation: isolate;
+    overflow: hidden;
+    min-height: 850px;
+    padding: clamp(5rem, 9vw, 8rem) clamp(1.25rem, 7vw, 8rem);
+    background-image: url(../assets/polkadots.jpg);
+    color: var(--black);
 }
 
 .skills::before {
-  position: absolute;
-  z-index: -2;
-  inset: 0;
-  content: "";
-  opacity: 0.45;
-  mix-blend-mode: multiply;
+    position: absolute;
+    z-index: -2;
+    inset: 0;
+    content: "";
+    opacity: 0.45;
+    mix-blend-mode: multiply;
 }
 
 .skills-heading { 
@@ -87,17 +87,40 @@
 .skills-group h2 { margin: 0.7rem 0 0.7rem; font-family: 'Mourint', Georgia, serif; font-size: clamp(1.65rem, 2.8vw, 2.45rem); font-weight: 400; line-height: 1.02; }
 .skills-group p { margin: 0; font-family: 'Instrument Serif', Georgia, serif; font-size: clamp(1.25rem, 1.9vw, 1.65rem); line-height: 1.22; }
 
-.skills-sticker { position: absolute; z-index: 2; width: min(30vw, 200px); pointer-events: none; }
-.skills-sticker-pink { top: -3rem; right: 5%; transform: rotate(15deg); }
-.skills-sticker-blue { bottom: 3rem; left: -3%; transform: rotate(-18deg); }
+.skills-sticker { 
+    position: absolute; 
+    z-index: 2; 
+    width: min(30vw, 200px); 
+    pointer-events: none; 
+}
+
+.skills-sticker-pink { 
+    top: -3rem; 
+    right: 5%; 
+    transform: rotate(15deg); 
+}
+
+.skills-sticker-blue { 
+    bottom: 3rem; 
+    left: -3%; 
+    transform: rotate(-18deg); 
+}
+
+.skills-doodle { 
+    position: absolute; 
+    z-index: 3; 
+    width: min(30vw, 180px);
+    left: 2%; 
+    top: 3%; 
+}
 
 .skills-lace {
-  position: absolute;
-  z-index: 0;
-  left: 0;
-  width: 100%;
-  object-fit: fill;
-  pointer-events: none;
+    position: absolute;
+    z-index: 0;
+    left: 0;
+    width: 100%;
+    object-fit: fill;
+    pointer-events: none;
 }
 
 .skills-lace-top { top: 2rem; }
@@ -114,7 +137,7 @@
         height: 55%;
         object-fit: fill;
         transform: translate(-50%, -50%) rotate(-91.4deg);
-        
+
     }
     .skills-note-content { grid-template-columns: 1fr; gap: 0.65rem; padding: 17% 20% 13%; }
     .skills-number { margin-bottom: 0.4rem; font-size: 1.5rem; }

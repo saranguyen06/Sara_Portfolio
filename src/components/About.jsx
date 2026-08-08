@@ -5,6 +5,9 @@ import paper from "../assets/pinksticky-2.png";
 import pinkButton from "../assets/sticker3.png";
 import greenButton from "../assets/sticker4.png";
 import flowerAscii from "../assets/image-1.png";
+import flowerDoodle from "../assets/Flower_doodle.png";
+import starDoodle from "../assets/Star_doodle.png";
+import twinkleDoodle from "../assets/Twinkle_doodle.png";
 import "../styles/About.css";
 
 export default function About() {
@@ -12,8 +15,8 @@ export default function About() {
     <section id="about" className="about-hero" aria-labelledby="about-sara">
         <img className="about-lace" src={lace} alt="" aria-hidden="true" />
         <img className="about-paper" src={paper} alt="" aria-hidden="true" />
-        <span className="about-doodle about-doodle-flower" aria-hidden="true">✿</span>
-        <span className="about-doodle about-doodle-star" aria-hidden="true">☆</span>
+        <img className="about-doodle-flower" src={flowerDoodle} alt="" aria-hidden="true" />
+        <img className="about-doodle-star" src={starDoodle} alt="" aria-hidden="true" />
 
         <div className="about-copy">
             <p className="about-greeting">Hello! I'm</p>
@@ -47,6 +50,7 @@ export default function About() {
             <img className="about-pink-sticker" src={pinkButton} alt="" aria-hidden="true" />
             <img className="about-green-sticker" src={greenButton} alt="" aria-hidden="true" />
             <img className="about-flower" src={flowerAscii} alt="" aria-hidden="true" />
+            <img className="about-doodle" src={twinkleDoodle} alt="" aria-hidden="true" />
         </div>
     </section>
   );

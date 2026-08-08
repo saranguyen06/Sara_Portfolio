@@ -2,7 +2,10 @@ import { useState, useEffect, useCallback } from "react";
 import { socialLinks } from "../config/socialLinks";
 import greenGingham from "../assets/Sage_Gingham.webp";
 import paper from "../assets/pinksticky-1.png";
+import flowerDoodle from "../assets/Flower_doodle.png";
+import starDoodle from "../assets/Star_doodle.png";
 import calendarProject from "../assets/calendar.png";
+import buckitProject from "../assets/buckit.gif"
 import "../styles/Projects.css";
 
 const PROJECTS_PER_PAGE = 3;
@@ -13,7 +16,7 @@ const projects = [
         title: "Buck-it",
         description: "Full-stack travel planning application.",
         stack: "HTML, CSS, JavaScript, Bootstrap, Node.js, Express, PostgreSQL, Render",
-        image: null,
+        image: buckitProject,
         detailsUrl: "/projects/project-one",
         githubUrl: socialLinks?.repositories?.projectOne,
     },
@@ -81,6 +84,8 @@ export default function Projects() {
                     <span className="projects-heading-pro">Pro</span>
                     <span className="projects-heading-jects">jects</span>
                 </h1>
+                <img className="projects-doodle-flower" src={flowerDoodle} alt="" aria-hidden="true" />
+                <img className="projects-doodle-star" src={starDoodle} alt="" aria-hidden="true" />
             </header>
 
             <div className="projects-stage">

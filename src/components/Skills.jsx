@@ -2,6 +2,7 @@ import laceTrim from "../assets/lace_trim.png";
 import paper from "../assets/paper.png";
 import pinkSticker from "../assets/sticker1.png";
 import blueSticker from "../assets/sticker2.png";
+import twinkleDoodle from "../assets/Twinkle_doodle.png";
 import "../styles/Skills.css";
 
 const skillGroups = [
@@ -33,6 +34,7 @@ export default function Skills() {
             <img className="skills-paper" src={paper} alt="" aria-hidden="true" />
             <img className="skills-sticker skills-sticker-pink" src={pinkSticker} alt="" aria-hidden="true" />
             <img className="skills-sticker skills-sticker-blue" src={blueSticker} alt="" aria-hidden="true" />
+            <img className="skills-doodle" src={twinkleDoodle} alt="" aria-hidden="true" />
 
             <div className="skills-note-content">
             {skillGroups.map((group, index) => (

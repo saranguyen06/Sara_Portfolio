@@ -1,5 +1,6 @@
 import { FileText, ArrowUp } from 'lucide-react';
 import { socialLinks } from "../config/socialLinks";
+import "../styles/Footer.css";
 
 export default function Footer() {
     const currentYear = new Date().getFullYear();
@@ -9,38 +10,40 @@ export default function Footer() {
     };
 
     return (
-        <footer>
-        <div>
-            <div>
+        <footer className="footer">
+        <div className="footer-inner">
+            <div className="footer-row">
             {/* Left - Made with heart and copyright (centered on mobile) */}
-            <div>
-                <div>
+            <div className="footer-left">
+                <div className="footer-made">
                 <span>
-                    Made with
-                    <span>˚ʚ♡ɞ˚</span>
+                    Made with{" "}
+                    <span className="footer-heart">♡⊹˚</span>
                 </span>
                 </div>
-                <div>
+                <div className="footer-copyright">
                 © {currentYear} Sara Nguyen. All rights reserved.
                 </div>
             </div>
 
             {/* Center - Back to top button */}
-            <div>
+            <div className="footer-center">
                 <button
+                className="footer-top-btn"
                 onClick={scrollToTop}
                 onFocus={(e) => e.currentTarget.blur()}
                 aria-label="Back to top">
                 <ArrowUp size={20} />
                 </button>
-                <span>
+                <span className="footer-top-label">
                 back to top
                 </span>
             </div>
 
             {/* Right - Social buttons */}
-            <div>
+            <div className="footer-right">
                 <a
+                className="footer-icon-btn"
                 href={socialLinks.github}
                 target="_blank"
                 rel="noopener noreferrer"
@@ -50,6 +53,7 @@ export default function Footer() {
                 </svg>
                 </a>
                 <a
+                className="footer-icon-btn"
                 href={socialLinks.linkedin}
                 target="_blank"
                 rel="noopener noreferrer"
@@ -59,6 +63,7 @@ export default function Footer() {
                 </svg>
                 </a>
                 <a
+                className="footer-icon-btn"
                 href=""
                 target="_blank"
                 rel="noopener noreferrer"
