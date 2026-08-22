@@ -139,6 +139,11 @@
     transform: rotate(-18deg); 
 }
 
+.about-green-sticker:hover { 
+    transform: rotate(-18deg) translateY(-8px);
+    transition: all 0.3s ease;
+}
+
 .about-flower { 
     position: absolute; 
     z-index: 3; 
@@ -194,9 +199,30 @@
     .about-copy { text-align: center; }
     .about-intro { margin-inline: auto; }
     .about-actions { justify-content: center; }
-    .about-portrait-wrap { width: min(78%, 350px); }
-    .about-doodle-flower { top: 5%; left: 73%; }
-    .about-doodle-star { top: 52%; right: 3%; }
+    .about-portrait-wrap { width: min(70%, 300px); }
+    .about-pink-sticker { 
+        width: min(20vw, 100px);
+        right: 2%; 
+        top: -12%;  
+    }
+    .about-green-sticker { 
+        width: min(20vw, 120px);
+        left: -10%; 
+        bottom: -10%; 
+        transform: rotate(-18deg); 
+    }
+    .about-flower { 
+        width: min(25vw, 130px);
+        left: -25%; 
+        bottom: 10%; 
+    }
+    .about-doodle { 
+        width: min(30vw, 120px);
+        right: 1%; 
+        bottom: -10%; 
+    }
+    .about-doodle-flower { top: 5%; left: 65%; }
+    .about-doodle-star { top: 62%; right: 2%; }
     .about-lace { left: 0rem; bottom: 5rem; }
     .about-paper { left: 0rem; bottom: 5rem; }
     .about-polaroid { left: 0rem; bottom: 1rem; }

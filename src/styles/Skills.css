@@ -152,6 +152,11 @@
     .skills-group + .skills-group::before {
         display: none;
     }
+    .skills-doodle { 
+        width: min(25vw, 180px);
+        left: 2%; 
+        top: 0%; 
+    }
     .skills-sticker-pink { top: -2.4rem; right: -0.2rem; }
     .skills-sticker-blue { width: min(22vw, 140px); bottom: -1.8rem; left: -0.4rem; }
     .skills-lace { width: 100%; }

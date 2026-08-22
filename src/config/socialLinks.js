@@ -4,6 +4,11 @@ export const socialLinks = {
   github: import.meta.env.VITE_GITHUB_URL,
   linkedin: import.meta.env.VITE_LINKEDIN_URL,
   email: import.meta.env.VITE_EMAIL,
+
+  projects: {
+    projectOne: import.meta.env.VITE_PROJECT1_URL,
+    projectTwo: import.meta.env.VITE_PROJECT2_URL
+  },
   
   // GitHub repository URLs
   repositories: {

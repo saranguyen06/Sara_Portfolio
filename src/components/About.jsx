@@ -1,4 +1,5 @@
 import { socialLinks } from "../config/socialLinks";
+import resumePDF from "../assets/Resume.pdf";
 import profile from "../assets/profile_pic.jpg";
 import lace from "../assets/lace.png";
 import paper from "../assets/pinksticky-2.png";
@@ -37,7 +38,7 @@ export default function About() {
             >
                 Let's Connect!
             </a>
-            <a className="about-button about-button-secondary" href="/resume.pdf" target="_blank" rel="noopener noreferrer">
+            <a className="about-button about-button-secondary" href={resumePDF} target="_blank" rel="noopener noreferrer">
                 View my resume
             </a>
             </div>

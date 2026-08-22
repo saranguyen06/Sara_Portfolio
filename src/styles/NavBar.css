@@ -154,6 +154,7 @@
     display: block !important;
     min-width: 44px;
     min-height: 44px;
+    background-color: var(--pink);
   }
   
   /* Mobile menu styles */
@@ -176,6 +177,7 @@
     min-height: 44px;
     width: 100%;
     font-family: 'Instrument Serif', serif;
+    background-color: var(--pink);
   }
   
   .mobile-nav-tab:hover {

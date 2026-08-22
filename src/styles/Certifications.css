@@ -42,6 +42,7 @@
 }
 
 .cert-card {
+    position: relative;
     flex: 0 0 calc((100% - 2 * clamp(1.25rem, 2.5vw, 2rem)) / 3);
     margin: 5% 5% 5%;
     display: flex;
@@ -86,12 +87,41 @@
     font-weight: 400;
 }
 
-.cert-card-body p {
+.cert-card-body h3 {
+    margin: 5% 0 0;
+    font-family: 'Instrument Serif', Georgia, serif;
+    font-size: clamp(0.8rem, 1vw, 1rem);
+    line-height: 1;
+    color: rgb(0 0 0 / 80%);
+}
+
+/* description hidden by default, reveals on card hover */
+.cert-card-overlay {
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: clamp(1.5rem, 3vw, 2.5rem);
+    background: var(--dark-pink);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+}
+
+.cert-card:hover .cert-card-overlay {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.cert-card-overlay p {
     margin: 0;
     font-family: 'Instrument Serif', Georgia, serif;
-    font-size: clamp(1rem, 1.4vw, 1.15rem);
-    color: rgb(0 0 0 / 40%);
-    line-height: 1.35;
+    font-size: clamp(1.05rem, 1.5vw, 1.25rem);
+    line-height: 1.5;
+    color: var(--black);
+    text-align: center;
 }
 
 .cert-twinkle {

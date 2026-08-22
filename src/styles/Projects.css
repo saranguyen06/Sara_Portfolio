@@ -86,7 +86,16 @@
 /* Carousel track */
 .projects-track {
     display: flex;
-    transition: transform 0.5s ease;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    gap: clamp(1.25rem, 2.5vw, 2rem);
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.projects-track::-webkit-scrollbar {
+    display: none;
 }
 
 .projects-page {
@@ -94,6 +103,7 @@
     gap: clamp(1.25rem, 2.5vw, 2rem);
     flex: 0 0 100%;
     min-width: 100%;
+    scroll-snap-align: start;
 }
 
 /* Card — explicit flex-basis so 1, 2, or 3 cards on a page all space evenly */
@@ -194,6 +204,11 @@
     transition: background 0.2s ease, opacity 0.2s ease;
 }
 
+.projects-arrow:focus {
+    border-radius: 50%;
+    border: 1.5px solid var(--black);
+}
+
 .projects-arrow:hover:not(:disabled) {
     background: var(--dark-pink);
 }
@@ -258,6 +273,17 @@
     .project-card {
         flex: 0 0 calc((100% - 1rem) / 2);
         max-width: calc((100% - 1rem) / 2);
+    }
+    .projects-doodle-flower { 
+        width: min(20vw, 150px);
+        right: 0%; 
+        top: -20%; 
+    }
+    .projects-doodle-star { 
+        width: min(20vw, 160px);
+        top: 35%; 
+        left: 0%; 
+        transform: rotate(13deg); 
     }
 }
 
