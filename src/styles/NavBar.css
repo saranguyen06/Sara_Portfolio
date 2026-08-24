@@ -44,7 +44,6 @@
     justify-content: space-between;
     align-items: center;
     padding: 0 2rem;
-    box-sizing: border-box;
     width: 100%;
 }
 
@@ -161,7 +160,6 @@
     margin: 0;
     background-color: var(--pink);
     color: var(--color-black);
-    box-sizing: border-box;
   }
   
   /* Mobile menu styles */
