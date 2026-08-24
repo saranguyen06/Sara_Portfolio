@@ -106,26 +106,30 @@ export default function NavBar() {
 
             {/* Mobile Menu Button */}
             <button
-            className="mobile-menu-btn relative"
+            className="mobile-menu-btn"
             onClick={toggleMobileMenu}
             aria-label={isMobileMenuOpen ? 'Close menu' : 'Open menu'}
             aria-expanded={isMobileMenuOpen}>
             <div style={{ position: 'relative', width: '24px', height: '24px' }}>
                 <Menu
-                size={24}
-                style={{
-                    position: 'absolute',
-                    transition: 'opacity 0.3s ease',
-                    opacity: isMobileMenuOpen ? 0 : 1
-                }}
+                    size={24}
+                    style={{
+                        position: 'absolute',
+                        top: 0,
+                        left: 0,
+                        transition: 'opacity 0.3s ease',
+                        opacity: isMobileMenuOpen ? 0 : 1
+                    }}
                 />
                 <X
-                size={24}
-                style={{
-                    position: 'absolute',
-                    transition: 'opacity 0.3s ease',
-                    opacity: isMobileMenuOpen ? 1 : 0
-                }}
+                    size={24}
+                    style={{
+                        position: 'absolute',
+                        top: 0,
+                        left: 0,
+                        transition: 'opacity 0.3s ease',
+                        opacity: isMobileMenuOpen ? 1 : 0
+                    }}
                 />
             </div>
             </button>

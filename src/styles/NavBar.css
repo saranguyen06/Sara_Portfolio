@@ -1,5 +1,3 @@
-@import url('https://googleapis.com');
-
 /* Navigation Styles */
 .navigation {
     position: fixed !important;
@@ -46,6 +44,8 @@
     justify-content: space-between;
     align-items: center;
     padding: 0 2rem;
+    box-sizing: border-box;
+    width: 100%;
 }
 
 .signature-name {
@@ -151,10 +151,17 @@
   
   /* Show mobile menu button on mobile */
   .mobile-menu-btn {
-    display: block !important;
-    min-width: 44px;
-    min-height: 44px;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    align-self: stretch;
+    width: 50px;
+    padding: 0;
+    margin: 0;
     background-color: var(--pink);
+    color: var(--color-black);
+    box-sizing: border-box;
   }
   
   /* Mobile menu styles */
@@ -178,6 +185,7 @@
     width: 100%;
     font-family: 'Instrument Serif', serif;
     background-color: var(--pink);
+    color: var(--color-black);
   }
   
   .mobile-nav-tab:hover {
@@ -230,11 +238,5 @@
     padding-right: 0.5rem !important;
     max-width: 100% !important;
     overflow-x: hidden !important;
-  }
-
-  /* Force all sections to respect viewport width */
-  * {
-    max-width: 100vw !important;
-    box-sizing: border-box !important;
   }
 }

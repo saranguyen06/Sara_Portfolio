@@ -185,5 +185,8 @@
 @media (max-width: 760px) {
     .certifications { min-height: auto; padding-block: 5rem 6rem; }
     .cert-grid { width: min(100%, 760px); grid-template-columns: 1fr; gap: 0.65rem; }
+    .cert-heading h1 {
+        font-size: clamp(3.5rem, 8vw, 8.8rem); 
+    }
     .cert-swirl { bottom: 0; }
 }
