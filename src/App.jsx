@@ -1,5 +1,6 @@
 import React, { useState, lazy, Suspense} from 'react'
 import { Routes, Route } from 'react-router-dom'
+import { Analytics } from '@vercel/analytics/react'
 import About from './components/About'
 import NavBar from './components/NavBar'
 import './App.css'
@@ -51,6 +52,7 @@ function App() {
   return (
     <>
       <AppContent />
+      <Analytics />
     </>
   )
 }
