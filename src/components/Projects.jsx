@@ -151,12 +151,14 @@ export default function Projects() {
                                                 <h2>{project.title}</h2>
                                                 <h3>{project.stack}</h3>
                                                 <p>{project.description}</p>
-                                                <a className="project-card-btn" href={project.url} target="_blank">
-                                                    View <span aria-hidden="true">&rarr;</span>
-                                                </a>
-                                                <a className="project-card-btn" href={project.githubUrl} target="_blank">
-                                                    Github
-                                                </a>
+                                                <div className="project-card-buttons">
+                                                    <a className="project-card-btn" href={project.url} target="_blank">
+                                                        View
+                                                    </a>
+                                                    <a className="project-card-btn" href={project.githubUrl} target="_blank">
+                                                        Github
+                                                    </a>
+                                                </div>
                                             </div>
                                         </article>
                                     ))}

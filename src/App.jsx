@@ -36,9 +36,6 @@ function AppContent(){
           <Suspense fallback={<div>Loading...</div>}>
             <Routes>
               <Route path="/" element={<HomePage />} />
-              {/* <Route path="/contact" element={<Contact />} /> */}
-              {/* Add your project routes here */}
-              {/* Example: <Route path="/projects/my-project" element={<MyProject />} /> */}
             </Routes>
           </Suspense>
         </main>

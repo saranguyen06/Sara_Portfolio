@@ -162,8 +162,14 @@
     line-height: 1.35;
 }
 
-.project-card-btn {
+.project-card-buttons {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
     margin-top: 0.4rem;
+}
+
+.project-card-btn {
     display: inline-flex;
     align-items: center;
     gap: 0.4rem;
@@ -180,7 +186,7 @@
 
 .project-card-btn:hover {
     background: var(--dark-pink);
-    transform: translateY(-1px);
+    transform: translateY(-2px);
 }
 
 /* Arrows */

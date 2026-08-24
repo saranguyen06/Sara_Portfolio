@@ -81,9 +81,12 @@
     transition: transform 180ms ease, box-shadow 180ms ease, background-color 180ms ease;
 }
 
-.about-button:hover { transform: translateY(-3px) rotate(-1deg); box-shadow: 4px 4px 0 var(--black); }
+.about-button:hover { 
+    transform: translateY(-2px); 
+}
+
 .about-button-primary { background: var(--dark-pink); }
-.about-button-secondary { background: rgb(255 255 255 / 62%); }
+.about-button-secondary { background: #fff; }
 
 .about-portrait-wrap { 
     position: relative; 

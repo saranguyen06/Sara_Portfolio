@@ -23,30 +23,30 @@ export default function About() {
             <p className="about-greeting">Hello! I'm</p>
             <h1 id="about-name">Sara Nguyen</h1>
             <p className="about-intro">
-            I am currently a Computer Science student at CU Boulder, interested in
-            software development and AI/ML engineering. I have experience developing
-            full-stack web applications using JavaScript, Node.js, Express, and
-            PostgreSQL, and I have strong problem-solving skills developed through
-            coursework, collaborative software projects, and leadership roles.
+                I am currently a Computer Science student at CU Boulder, interested in
+                software development and AI/ML engineering. I have experience developing
+                full-stack web applications using JavaScript, Node.js, Express, and
+                PostgreSQL, and I have strong problem-solving skills developed through
+                coursework, collaborative software projects, and leadership roles.
             </p>
             <div className="about-actions">
-            <a
-                className="about-button about-button-primary"
-                href={socialLinks.linkedin}
-                target="_blank"
-                rel="noopener noreferrer"
-            >
-                Let's Connect!
-            </a>
-            <a className="about-button about-button-secondary" href={resumePDF} target="_blank" rel="noopener noreferrer">
-                View my resume
-            </a>
+                <a
+                    className="about-button about-button-primary"
+                    href={socialLinks.linkedin}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    Let's Connect!
+                </a>
+                <a className="about-button about-button-secondary" href={resumePDF} target="_blank" rel="noopener noreferrer">
+                    View my resume
+                </a>
             </div>
         </div>
 
         <div className="about-portrait-wrap">
             <figure className="about-polaroid">
-            <img src={profile} alt="Sara Nguyen" />
+                <img src={profile} alt="Sara Nguyen" />
             </figure>
             <img className="about-pink-sticker" src={pinkButton} alt="" aria-hidden="true" />
             <img className="about-green-sticker" src={greenButton} alt="" aria-hidden="true" />
