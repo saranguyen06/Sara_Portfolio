@@ -157,7 +157,7 @@
     align-self: stretch;
     width: 50px;
     padding: 0;
-    margin: 0;
+    margin-right: 0.4rem;
     background-color: var(--pink);
     color: var(--color-black);
   }
