@@ -59,8 +59,7 @@
   flex-shrink: 0;
   line-height: 1;
   padding-top: 0.2rem;
-  /* Button reset styles for accessibility */
-  padding: 0.2rem 0 0 0;
+  padding: 0.2rem 0;
   text-align: left;
 }
 
@@ -133,6 +132,7 @@
 @media (max-width: 768px) {
   .signature-name {
     font-size: 2rem;
+    padding: 0.3rem 0;
   }
   
   .main-content {
