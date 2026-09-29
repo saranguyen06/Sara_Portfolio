@@ -1,6 +1,6 @@
 import { FileText, ArrowUp } from 'lucide-react';
 import { socialLinks } from "../config/socialLinks";
-import resumePDF from "../assets/Resume.pdf";
+import resumePDF from "../assets/Nguyen_Sara_Resume.pdf";
 import "../styles/Footer.css";
 
 export default function Footer() {

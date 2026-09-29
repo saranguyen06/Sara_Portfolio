@@ -1,5 +1,5 @@
 import { socialLinks } from "../config/socialLinks";
-import resumePDF from "../assets/Resume.pdf";
+import resumePDF from "../assets/Nguyen_Sara_Resume.pdf";
 import profile from "../assets/profile_pic.jpg";
 import lace from "../assets/lace.png";
 import paper from "../assets/pinksticky-2.png";
